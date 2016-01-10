@@ -7,6 +7,11 @@ body {
   background: #2d2c2c url('../images/px.png');
   text-align: center;
   font: 1em 'Open Sans', sans-serif;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    background: #2d2c2c url('../images/px_@2x.png');
+  }
 }
 
 h1 {
