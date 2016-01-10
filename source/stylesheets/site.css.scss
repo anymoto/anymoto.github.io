@@ -11,8 +11,12 @@ body {
 
 h1 {
   color: #0DE5A8;
-  font: 600 3.8em 'Satisfy', 'cursive';
+  font: 600 3.8rem 'Satisfy', 'cursive';
   margin: 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
 }
 
 .profile-wrapper {
@@ -25,7 +29,7 @@ h1 {
 }
 
 .profile {
-  height: 37rem;
+  height: 40rem;
   position: relative;
   top: 70%;
   transform: translateY(-70%);
@@ -37,7 +41,7 @@ h1 {
   width: 19.2rem;
 
   @media screen and (max-width: 480px) {
-    width: 200px;
+    width: 12rem;
   }
 }
 
@@ -66,10 +70,10 @@ h1 {
 }
 
 .inline-link {
-  color: #FFF;
+  color: #0DE5A8;
   text-decoration: none;
 
   &:hover {
-    color: #0DE5A8;
+    color: darken(#0DE5A8, 10%);
   }
 }
