@@ -2,3 +2,25 @@
 title: 'Ana Castro'
 ---
 
+<div class='profile-wrapper'>
+  <div class='profile'>
+    <%= image_tag('profile.png', class: 'profile-pic') %>
+    <h1>Hi! I'm Ana Castro</h1>
+    <div class='bio'>
+      <p class='text'>Software Engineer who loves Ruby, CSS and Vim. Diversity advocate.</p>
+      <p class='text'>
+        Coding at <%= link_to 'MagmaLabs', 'http://magmalabs.io', class: 'inline-link', target: 'blank' %>
+        and doing things for <%= link_to 'RailsBridge', 'http://railsbridge.org/', class: 'inline-link', target: 'blank' %>
+        and <%= link_to 'Women Who Code', 'https://womenwhocode.com/', class: 'inline-link', target: 'blank' %>.
+      </p>
+    </div>
+    <div class='social'>
+      <%= link_to '', 'https://github.com/anymoto', class: 'social-icon fa fa-github' %>
+      <%= link_to '', 'https://twitter.com/anymoto', class: 'social-icon fa fa-twitter' %>
+      <%= link_to '', 'https://medium.com/@anymoto', class: 'social-icon fa fa-medium' %>
+      <%= link_to '', 'https://mx.linkedin.com/in/anacastromartinez', class: 'social-icon fa fa-linkedin' %>
+      <%= link_to '', 'mailto:ana@castromartinez.com', class: 'social-icon fa fa-envelope' %>
+    </div>
+  </div>
+</div>
+

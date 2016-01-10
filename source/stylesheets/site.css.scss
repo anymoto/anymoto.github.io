@@ -1,67 +1,75 @@
 @charset "utf-8";
 @import "normalize";
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
   background: #2d2c2c url('../images/px.png');
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-}
-
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+  font: 1em 'Open Sans', sans-serif;
 }
 
 h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
+  color: #0DE5A8;
+  font: 600 3.8em 'Satisfy', 'cursive';
   margin: 0;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
+.profile-wrapper {
+  height: 47rem;
+  padding: 15px;
 
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
+  @media screen and (max-width: 480px) {
+    height: 43rem;
   }
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+.profile {
+  height: 37rem;
+  position: relative;
+  top: 70%;
+  transform: translateY(-70%);
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
+.profile-pic {
+  border-radius: 50%;
+  margin: 1.4rem;
+  width: 19.2rem;
+
+  @media screen and (max-width: 480px) {
+    width: 200px;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
+}
+
+.social {
+  color: #0DE5A8;
+  font-size: 2.6rem;
+}
+
+.social-icon {
+  color: #0DE5A8;
+  margin: 0 5px;
+
+  &:hover {
+    color: darken(#0DE5A8, 10%);
   }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+}
+
+.text {
+  color: #FFF;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.bio {
+  margin: 1.4rem;
+}
+
+.inline-link {
+  color: #FFF;
+  text-decoration: none;
+
+  &:hover {
+    color: #0DE5A8;
   }
 }
